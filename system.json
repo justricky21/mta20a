@@ -22,8 +22,8 @@
   "gridUnits": "ft",
   "primaryTokenAttribute": "health",
   "secondaryTokenAttribute": "power",
-  "url": "",
-  "manifest": "",
+  "url": "https://github.com/ricardoruizfp/mta20a",
+  "manifest": "https://github.com/ricardoruizfp/mta20a/master/system.json",
   "download": "",
   "license": "LICENSE.txt"
 }
