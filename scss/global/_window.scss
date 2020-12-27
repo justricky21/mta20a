@@ -2,6 +2,11 @@
   font-family: $font-primary;
 }
 
+.mta20a.actor {
+  min-width: 600px;
+  min-height: 500px;
+}
+
 .rollable {
   &:hover,
   &:focus {
