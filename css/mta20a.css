@@ -210,6 +210,11 @@
   text-transform: uppercase;
 }
 
+.mta20a .header-label {
+  font-weight: bold;
+  padding-top: 5px;
+}
+
 .mta20a .tabs {
   height: 40px;
   border-top: 1px solid #aaa;
