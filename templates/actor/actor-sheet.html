@@ -1,5 +1,63 @@
 <form class="{{cssClass}} flexcol" autocomplete="off">
-  {{!-- Sheet Tab Navigation --}}
+  {{!-- Sheet Tab Navigation --}} {{!-- Sheet Header --}}
+  <header class="grid grid-header grid-6col">
+    <label for="actor.name" class="header-label">Name</label>
+    <input name="name" type="text" value="{{actor.name}}" placeholder="Name" />
+    <label for="actor.nature" class="header-label">Nature</label>
+    <input
+      name="nature"
+      type="text"
+      value="{{actor.nature}}"
+      placeholder="Nature"
+    />
+    <label for="actor.affiliation" class="header-label">Affiliation</label>
+    <input
+      name="affiliation"
+      type="text"
+      value="{{actor.affiliation}}"
+      placeholder="Affiliation"
+    />
+    <label for="actor.player" class="header-label">Player</label>
+    <input
+      name="player"
+      type="text"
+      value="{{actor.player}}"
+      placeholder="Player"
+    />
+    <label for="actor.demeanor" class="header-label">Demeanor</label>
+    <input
+      name="demeanor"
+      type="text"
+      value="{{actor.demeanor}}"
+      placeholder="Demeanor"
+    />
+    <label for="actor.sect" class="header-label">Sect</label>
+    <input name="sect" type="text" value="{{actor.sect}}" placeholder="Sect" />
+    <label for="actor.chronicle" class="header-label">Chronicle</label>
+    <input
+      name="chronicle"
+      type="text"
+      value="{{actor.chronicle}}"
+      placeholder="Chronicle"
+    />
+
+    <label for="actor.essence" class="header-label">Essence</label>
+    <input
+      name="essence"
+      type="text"
+      value="{{actor.essence}}"
+      placeholder="Essence"
+    />
+
+    <label for="actor.concept" class="header-label">Concept</label>
+    <input
+      name="concept"
+      type="text"
+      value="{{actor.concept}}"
+      placeholder="Concept"
+    />
+  </header>
+
   <nav class="sheet-tabs tabs" data-group="primary">
     <a class="item" data-tab="main">Main</a>
     <a class="item" data-tab="description">Description</a>
@@ -8,75 +66,7 @@
 
   {{!-- Sheet Body --}}
   <section class="sheet-body">
-    <div class="tab main" data-group="primary" data-tab="main">
-      <div class="grid grid-header grid-6col">
-        <label for="actor.name" class="header-label">Name</label>
-        <input
-          name="name"
-          type="text"
-          value="{{actor.name}}"
-          placeholder="Name"
-        />
-        <label for="actor.nature" class="header-label">Nature</label>
-        <input
-          name="nature"
-          type="text"
-          value="{{actor.nature}}"
-          placeholder="Nature"
-        />
-        <label for="actor.affiliation" class="header-label">Affiliation</label>
-        <input
-          name="affiliation"
-          type="text"
-          value="{{actor.affiliation}}"
-          placeholder="Affiliation"
-        />
-        <label for="actor.player" class="header-label">Player</label>
-        <input
-          name="player"
-          type="text"
-          value="{{actor.player}}"
-          placeholder="Player"
-        />
-        <label for="actor.demeanor" class="header-label">Demeanor</label>
-        <input
-          name="demeanor"
-          type="text"
-          value="{{actor.demeanor}}"
-          placeholder="Demeanor"
-        />
-        <label for="actor.sect" class="header-label">Sect</label>
-        <input
-          name="sect"
-          type="text"
-          value="{{actor.sect}}"
-          placeholder="Sect"
-        />
-        <label for="actor.chronicle" class="header-label">Chronicle</label>
-        <input
-          name="chronicle"
-          type="text"
-          value="{{actor.chronicle}}"
-          placeholder="Chronicle"
-        />
-
-        <label for="actor.essence" class="header-label">Essence</label>
-        <input
-          name="essence"
-          type="text"
-          value="{{actor.essence}}"
-          placeholder="Essence"
-        />
-
-        <label for="actor.concept" class="header-label">Concept</label>
-        <input
-          name="concept"
-          type="text"
-          value="{{actor.concept}}"
-          placeholder="Concept"
-        />
-      </div>
-    </div>
+    <div class="tab main" data-group="primary" data-tab="main"></div>
     {{!-- Biography Tab --}}
     <div class="tab biography" data-group="primary" data-tab="description">
       {{editor content=data.biography target="data.biography" button=true
